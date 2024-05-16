@@ -13,6 +13,7 @@ app.use(async (ctx) => {
   (async () => {
     for (let i = 0; i < 10; i++) {
       await setTimeout(1000);
+      console.log(`Pushing ${i}`);
       responseStream.push(`${i}`);
     }
     responseStream.push(null);
