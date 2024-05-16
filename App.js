@@ -36,7 +36,7 @@ const applyGlobalPolyfills = () => {
 applyGlobalPolyfills();
 
 // Replace this URL with the URL of the server. Ngrok may be needed for the preview build.
-const url = "http://192.168.1.1:3000";
+const url = "http://10.0.2.2:3000";
 
 export default function App() {
   const [headers, setHeaders] = React.useState("");
