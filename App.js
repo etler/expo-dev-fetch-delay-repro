@@ -45,6 +45,7 @@ export default function App() {
   const [isStreaming, setIsStreaming] = React.useState(false);
   const startStream = async () => {
     try {
+      setHeaders("Fetching...");
       const response = await fetch(url, {
         reactNative: { textStreaming: true },
       });
